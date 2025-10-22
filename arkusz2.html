@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator kosztów montażu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5deb3;
+            text-align: center;
+            padding: 40px;
+        }
+        h1 {
+            margin-bottom: 30px;
+        }
+        form {
+            display: inline-block;
+            padding: 20px;
+            background-color: #fff8dc;
+            border: 1px solid #ccc;
+        }
+        label {
+            display: inline-block;
+            margin: 10px;
+        }
+        input[type="number"] {
+            width: 60px;
+            padding: 5px;
+            margin-left: 5px;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 8px 20px;
+        }
+        p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kalkulator kosztów montażu</h1>
+    <form method="post">
+        <label>
+            Szerokość pomieszczenia [m]:
+            <input type="number" name="szerokosc" required>
+        </label>
+        <label>
+            Długość pomieszczenia [m]:
+            <input type="number" name="dlugosc" required>
+        </label>
+        <p>Typ panelu</p>
+        <label>
+            <input type="radio" name="panel" value="laminat" required>
+            Panele laminowane
+        </label><br>
+        <label>
+            <input type="radio" name="panel" value="winyl" required>
+            Panele winylowe
+        </label><br>
+        <label>
+            <input type="radio" name="panel" value="deska" required>
+            Deska podłogowa
+        </label><br><br>
+        <input type="submit" value="Oblicz">
+    </form>
+</body>
+</html>

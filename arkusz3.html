@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sprawdź kto ma urodziny</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f0ff;
+            text-align: center;
+            padding: 50px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="date"] {
+            padding: 5px;
+            font-size: 16px;
+            margin-right: 8px;
+        }
+        input[type="submit"] {
+            padding: 6px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #5a5aff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+        input[type="submit"]:hover {
+            background-color: #3f3fcc;
+        }
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sprawdź kto ma urodziny</h2>
+    <form method="POST">
+        <input type="date" name="data" required>
+        <input type="submit" value="wyślij">
+    </form>
+    <p>Dnia 2024-01-24 są imieniny: Felicji, Franciszka, Rafała</p>
+</body>
+</html>
